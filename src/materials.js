@@ -58,3 +58,26 @@ export const cableMaterial = new THREE.MeshStandardMaterial({
   metalness: 0.0,
   roughness: 0.8,
 });
+
+// ── Exterior cage ─────────────────────────────────────────────────────────────
+
+// Duct guard rings + edge collars — dark anodised aluminium
+export const cageMaterial = new THREE.MeshStandardMaterial({
+  color:     0x1c2c3c,
+  metalness: 0.78,
+  roughness: 0.30,
+});
+
+// Channel lattice members — matte dark steel
+export const latticeMaterial = new THREE.MeshStandardMaterial({
+  color:     0x0e1d2c,
+  metalness: 0.55,
+  roughness: 0.60,
+});
+
+// Landing skids — titanium finish (matches vertex nodes)
+export const skidMaterial = new THREE.MeshStandardMaterial({
+  color:     0x8899aa,
+  metalness: 0.92,
+  roughness: 0.18,
+});

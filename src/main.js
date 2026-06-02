@@ -15,6 +15,7 @@ import * as THREE from 'three';
 import * as CANNON from 'cannon-es';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { loadVoidVector } from './voidvector.js';
+import { buildCage }      from './cage.js';
 
 const DEG = Math.PI / 180;
 
@@ -177,6 +178,7 @@ loadVoidVector(scene, world).then(result => {
   drone = result;
 
   // Override physics settings for flight
+  drone.cage = buildCage(drone.group);
   drone.body.linearDamping  = LIN_DAMPING;
   drone.body.angularDamping = ANG_DAMPING;
   drone.body.position.set(0, START_HEIGHT, 0);
