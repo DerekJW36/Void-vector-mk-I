@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoidVector Mk I — DGC SYNTECK AI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #080c14; }
+    canvas { display: block; }
+    #hud {
+      position: fixed; top: 20px; left: 20px;
+      font-family: 'Courier New', monospace;
+      font-size: 11px; letter-spacing: 0.08em;
+      color: #00c8ff; pointer-events: none; user-select: none;
+    }
+    #hud .label { color: #4a6a8a; font-size: 9px; letter-spacing: 0.15em; margin-bottom: 2px; }
+    #hud .val   { color: #00c8ff; margin-bottom: 10px; }
+    #badge {
+      position: fixed; bottom: 20px; right: 20px;
+      font-family: 'Courier New', monospace; font-size: 9px;
+      letter-spacing: 0.12em; color: #c8a84b; pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="hud">
+    <div class="label">CRAFT</div>
+    <div class="val">VOIDVECTOR MK I</div>
+    <div class="label">ARCHITECTURE</div>
+    <div class="val">TETRAHEDRAL THRUST</div>
+    <div class="label">THRUSTERS</div>
+    <div class="val">4× 76mm DUCTED EDF</div>
+    <div class="label">AUW</div>
+    <div class="val">2.8 kg</div>
+    <div class="label">MAX THRUST</div>
+    <div class="val">74 N  ·  2.69:1 TWR</div>
+  </div>
+  <div id="badge">DGC SYNTECK AI — ENGINEERING DIVISION — V1.0</div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
